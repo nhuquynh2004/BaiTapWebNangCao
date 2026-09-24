@@ -1,0 +1,23 @@
+<table border="1" *ngIf="selectedProduct; else noProduct">
+  <tr>
+    <td>ID:</td>
+    <td>{{selectedProduct.ProductId}}</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>{{selectedProduct.ProductName}}</td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td>{{selectedProduct.Price}}</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img [src]="selectedProduct.Image"/>
+    </td>
+  </tr>
+</table>
+
+<ng-template #noProduct>
+  <p>Không tìm thấy sản phẩm.</p>
+</ng-template>
