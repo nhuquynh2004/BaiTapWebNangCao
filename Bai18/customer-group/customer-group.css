@@ -1,0 +1,25 @@
+.group-block {
+  margin-bottom: 30px;
+}
+
+h2 {
+  background-color: #343a40;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 6px;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: cover;
+}

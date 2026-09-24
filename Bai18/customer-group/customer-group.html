@@ -1,0 +1,27 @@
+<p>customer-group works!</p>
+<p style="color:red">{{errMessage}}</p>
+
+<div *ngFor="let group of groups" class="group-block">
+  <h2>{{group.CustomterTypeName}}</h2>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Age</td>
+      <td>Avatar</td>
+    </tr>
+    <tbody>
+      <tr *ngFor="let c of group.Customers">
+        <td>{{c.Id}}</td>
+        <td>{{c.Name}}</td>
+        <td>{{c.Email}}</td>
+        <td>{{c.Age}}</td>
+        <td>
+          <img src="{{c.Image}}" width="60px" height="60px">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
